@@ -1,0 +1,30 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.tourtravel:backend >-----------------------
+[INFO] Building backend 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.5.0:clean (default-clean) @ backend ---
+[INFO] Deleting D:\project\tour-travel-system\backend\target
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ backend ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 54 source files with javac [debug parameters release 17] to target\classes
+[WARNING] /D:/project/tour-travel-system/backend/src/main/java/com/tourtravel/entity/User.java:[50,27] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[WARNING] /D:/project/tour-travel-system/backend/src/main/java/com/tourtravel/entity/User.java:[54,26] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[WARNING] /D:/project/tour-travel-system/backend/src/main/java/com/tourtravel/entity/Destination.java:[38,31] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[WARNING] /D:/project/tour-travel-system/backend/src/main/java/com/tourtravel/entity/TourPackage.java:[55,27] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[WARNING] /D:/project/tour-travel-system/backend/src/main/java/com/tourtravel/entity/TourPackage.java:[59,26] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[INFO] /D:/project/tour-travel-system/backend/src/main/java/com/tourtravel/config/SecurityConfig.java: Some input files use or override a deprecated API.
+[INFO] /D:/project/tour-travel-system/backend/src/main/java/com/tourtravel/config/SecurityConfig.java: Recompile with -Xlint:deprecation for details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.722 s
+[INFO] Finished at: 2026-09-25T22:11:41+05:30
+[INFO] ------------------------------------------------------------------------

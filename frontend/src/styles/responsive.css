@@ -1,0 +1,42 @@
+/* Additional responsive utilities */
+@media (max-width: 768px) {
+  :root {
+    --font-hero: 2.5rem;
+    --font-h1: 2rem;
+    --font-h2: 1.75rem;
+    --font-h3: 1.25rem;
+  }
+  
+  .hide-on-mobile {
+    display: none !important;
+  }
+  
+  .stack-on-mobile {
+    flex-direction: column !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .hide-on-desktop {
+    display: none !important;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

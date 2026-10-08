@@ -1,0 +1,126 @@
+/* Premium Contact Page CSS */
+.contact-page {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+.page-header {
+  padding: calc(var(--spacing-xxl) * 1.2) 0 var(--spacing-xxl);
+  background: var(--gradient-primary);
+  color: var(--text-inverse);
+  text-align: center;
+}
+
+.pattern-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.pattern-bg::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1) 2px, transparent 2px);
+  background-size: 30px 30px;
+  opacity: 0.5;
+}
+
+.page-title {
+  font-size: var(--font-hero);
+  color: var(--text-inverse);
+  font-weight: 800;
+  margin-bottom: var(--spacing-sm);
+  position: relative;
+  z-index: 2;
+}
+
+.page-subtitle {
+  font-size: var(--font-h4);
+  opacity: 0.9;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-layout {
+  align-items: stretch;
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.info-card {
+  flex-direction: row;
+  align-items: center;
+  padding: 1.5rem;
+  gap: 1.5rem;
+  border-left: 4px solid transparent;
+  transition: var(--transition);
+}
+
+.info-card:hover {
+  border-left-color: var(--secondary);
+}
+
+.info-icon-wrapper {
+  width: 55px;
+  height: 55px;
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--secondary);
+  border-radius: var(--border-radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.info-heading {
+  font-size: 1.15rem;
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+}
+
+.info-text {
+  color: var(--text-secondary);
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.info-subtext {
+  font-size: 0.85rem;
+  color: var(--primary-light);
+  opacity: 0.7;
+}
+
+.d-block {
+  display: block;
+}
+
+.form-row {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.w-50 {
+  width: 50%;
+}
+
+@media (max-width: 900px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+  .page-title {
+    font-size: var(--font-h1);
+  }
+}
+
+@media (max-width: 500px) {
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  .w-50 {
+    width: 100%;
+  }
+}

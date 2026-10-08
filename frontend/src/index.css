@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@import './styles/variables.css';
+@import './styles/global.css';
+@import './styles/buttons.css';
+@import './styles/forms.css';
+@import './styles/cards.css';
+@import './styles/navbar.css';
+@import './styles/footer.css';
+@import './styles/admin.css';
+@import './styles/responsive.css';

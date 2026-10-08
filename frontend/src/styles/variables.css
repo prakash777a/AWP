@@ -1,0 +1,63 @@
+:root {
+  /* Premium Dark Mode & Vibrant Color System */
+  --primary: #0F172A;      /* Sleek Slate Dark */
+  --primary-dark: #020617;
+  --secondary: #3B82F6;    /* Vibrant Blue */
+  --secondary-light: #60A5FA;
+  
+  --accent: #F43F5E;       /* Rose Red */
+  --accent-hover: #E11D48;
+  
+  --background: #F8FAFC;   /* Light Slate */
+  --surface: #FFFFFF;
+  --surface-glass: rgba(255, 255, 255, 0.75);
+  
+  --text-primary: #1E293B; /* Deep Slate */
+  --text-secondary: #64748B; /* Muted Slate */
+  --text-inverse: #FFFFFF;
+  
+  --border: #E2E8F0;
+  --border-focus: #3B82F6;
+  
+  --success: #10B981;
+  --danger: #EF4444;
+  --warning: #F59E0B;
+  --info: #0EA5E9;
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
+  --gradient-accent: linear-gradient(135deg, #F43F5E 0%, #F97316 100%);
+  --gradient-surface: linear-gradient(180deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.6) 100%);
+
+  /* Typography */
+  --font-family: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
+  --font-hero: 4.5rem;
+  --font-h1: 3rem;
+  --font-h2: 2.25rem;
+  --font-h3: 1.75rem;
+  --font-h4: 1.25rem;
+  --font-body: 1rem;
+  --font-small: 0.875rem;
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 3rem;
+  --spacing-xxl: 5rem;
+  
+  /* Utilities */
+  --border-radius-sm: 8px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 20px;
+  --border-radius-xl: 32px;
+  
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  --shadow-glow: 0 0 20px rgba(59, 130, 246, 0.3);
+  
+  --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --backdrop-blur: blur(12px);
+}

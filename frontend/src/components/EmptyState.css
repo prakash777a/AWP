@@ -1,0 +1,57 @@
+.empty-state-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background-color: var(--surface);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+}
+
+.empty-state-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+
+.empty-state-icon-default,
+.empty-state-icon-packages {
+  background-color: rgba(59, 130, 246, 0.1); /* Secondary light */
+  color: var(--secondary);
+}
+
+.empty-state-icon-bookings {
+  background-color: rgba(16, 185, 129, 0.1); /* Success light */
+  color: var(--success);
+}
+
+.empty-state-icon-reviews {
+  background-color: rgba(139, 92, 246, 0.1); /* Purple light */
+  color: #8B5CF6;
+}
+
+.empty-state-icon-error {
+  background-color: rgba(239, 68, 68, 0.1); /* Danger light */
+  color: var(--danger);
+}
+
+.empty-state-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.empty-state-desc {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  max-width: 400px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.5;
+}

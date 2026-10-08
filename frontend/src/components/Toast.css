@@ -1,0 +1,115 @@
+.toast-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  pointer-events: none;
+}
+
+.toast {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  min-width: 300px;
+  max-width: 400px;
+  padding: 14px 16px;
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-lg);
+  background-color: var(--surface);
+  color: var(--text-primary);
+  border-left: 4px solid transparent;
+}
+
+.toast-enter {
+  animation: toastSlideIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.toast-exit {
+  animation: toastSlideOut 0.3s ease-in forwards;
+}
+
+.toast-icon {
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toast-message {
+  flex: 1;
+  font-size: var(--font-small);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.toast-close {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 4px;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  border-radius: 50%;
+}
+
+.toast-close:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: var(--text-primary);
+}
+
+.toast-success {
+  border-left-color: var(--success);
+}
+.toast-success .toast-icon {
+  color: var(--success);
+}
+
+.toast-error {
+  border-left-color: var(--danger);
+}
+.toast-error .toast-icon {
+  color: var(--danger);
+}
+
+.toast-info {
+  border-left-color: var(--info);
+}
+.toast-info .toast-icon {
+  color: var(--info);
+}
+
+.toast-warning {
+  border-left-color: var(--warning);
+}
+.toast-warning .toast-icon {
+  color: var(--warning);
+}
+
+@keyframes toastSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes toastSlideOut {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
